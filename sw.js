@@ -1,6 +1,6 @@
 /* Service worker: guarda la app en el celular para que abra rápido y funcione sin señal.
    Cada vez que se publica una versión nueva, cambia el número de VERSION. */
-const VERSION = 'stm-v2.4.1';
+const VERSION = 'stm-v2.4.2';
 const SHELL = ['./', './index.html', './styles.css', './app.js', './datos.js', './manifest.webmanifest', './img/stm-crest.png', './icons/icon-192.png'];
 
 self.addEventListener('install', e => {

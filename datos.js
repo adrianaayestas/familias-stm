@@ -25,7 +25,7 @@ window.DATOS = {
 
   /* Tarjeta destacada al inicio (programa Recomienda Amigos). Si url queda vacío, no se muestra. */
   promo: {
-    titulo: { es: '¡Recomienda y gana un bono!', en: 'Refer a friend and win a bonus!' },
+    titulo: { es: '¡Recomienda amigos y gánate un bono!', en: 'Refer friends and win a bonus!' },
     texto: { es: 'Programa Recomienda Amigos: si conoces a una familia que busca colegio, recomiéndanos y gana un bono.', en: 'Refer a Friend program: if you know a family looking for a school, refer us and win a bonus.' },
     boton: { es: 'Recomendar ahora', en: 'Refer now' },
     url: 'https://docs.google.com/forms/d/1OreIsTL4pORr7bDCtEM7MI6HjriIQlilAdkEl-srDA8/viewform'
@@ -170,7 +170,7 @@ window.DATOS = {
       titulo: { es: 'Acto cívico · 7A y Nursery', en: 'Civic act · 7A and Nursery' },
       detalle: { es: 'Lunes', en: 'Monday' } },
     { fecha: '2026-09-30', tipo: 'admin', niveles: ['preescolar', 'primaria', 'secundaria'],
-      titulo: { es: 'Cierra el registro de matrícula 2027', en: 'Open registration 2027 ends' },
+      titulo: { es: 'Último día de matrículas abiertas 2027', en: 'Last day of open enrollment 2027' },
       detalle: { es: 'Último día para reservar cupo con el 10 % de descuento', en: 'Last day to reserve a spot with the 10% discount' } },
 
     /* ---- Octubre 2026 ---- */
@@ -328,7 +328,7 @@ window.DATOS = {
   avisos: [
     { id: 'a-2026-09-matriculas-2027', fecha: '2026-09-08', tipo: 'admin',
       titulo: { es: 'Matrículas 2027: reserva tu cupo', en: 'Enrollment 2027: reserve your spot' },
-      resumen: { es: 'En septiembre, 10 % de descuento en matrícula. Registro abierto hasta el 30 de septiembre.', en: 'In September, 10% off enrollment. Registration open until September 30.' },
+      resumen: { es: 'En septiembre, 10 % de descuento en matrícula. Matrículas abiertas hasta el 30 de septiembre.', en: 'In September, 10% off enrollment. Enrollment open until September 30.' },
       cuerpo: { es: 'Ya está abierto el proceso de matrícula para el año escolar 2027. Durante septiembre, la matrícula tiene un 10 % de descuento. Sigue estos pasos:',
                 en: 'Enrollment for the 2027 school year is now open. During September, enrollment has a 10% discount. Follow these steps:' },
       pasos: [

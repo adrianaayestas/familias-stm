@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   const D = window.DATOS;
-  const VERSION = '2.4.1';
+  const VERSION = '2.4.2';
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
