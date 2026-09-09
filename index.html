@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Familias STM</title>
+<meta name="description" content="Portal para familias de St. Mary School: avisos, calendario, extracurriculares y contactos del colegio.">
+<meta name="theme-color" content="#0E0737">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Familias STM">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M10 20v-6h4v6"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.4 6 .9-4.3 4.2 1 6-5.3-2.8-5.3 2.8 1-6-4.3-4.2 6-.9z"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.5c3 0 5.5 2 5.5 5"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4z"/><path d="M8 9h8M8 12.5h5"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="i-open" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M19 13v5.5a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 18.5v-12A1.5 1.5 0 0 1 5.5 5H11"/></symbol>
+<symbol id="i-chev-l" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></symbol>
+<symbol id="i-chev-r" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+<symbol id="i-chev-d" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"/></symbol>
+<symbol id="i-chev-u" viewBox="0 0 24 24"><path d="m6 14.5 6-6 6 6"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1z"/><path d="M14 3.5v4h4M9 12.5h6M9 16.5h6"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.6 2.4 14.4 0 17M12 3.5c-2.4 2.6-2.4 14.4 0 17"/></symbol>
+<symbol id="i-web" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.6 2.4 14.4 0 17M12 3.5c-2.4 2.6-2.4 14.4 0 17"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"/><path d="M4 17v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></symbol>
+<symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v4l3.5 2.5-1.3 4h-4.4l-1.3-4L12 7.5M8.5 14l-3 2M15.5 14l3 2M12 20.5v-3"/></symbol>
+<symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10.5h18M7 14.5h4"/></symbol>
+<symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="14" rx="3"/><path d="M4 11h16M8 18v2M16 18v2"/><circle cx="8" cy="14.5" r="1"/><circle cx="16" cy="14.5" r="1"/></symbol>
+<symbol id="i-cup" viewBox="0 0 24 24"><path d="M5 8h11v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5z"/><path d="M16 10h2a2.5 2.5 0 0 1 0 5h-2M8 4.5v2M11 4.5v2"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="9" width="17" height="11" rx="2"/><path d="M3.5 13h17M12 9v11M12 9c-2.5 0-4.5-1-4.5-3a2 2 0 0 1 4-.5c.3 1 .5 2.2.5 3.5zM12 9c2.5 0 4.5-1 4.5-3a2 2 0 0 0-4-.5c-.3 1-.5 2.2-.5 3.5z"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></symbol>
+<symbol id="i-cross" viewBox="0 0 24 24"><path d="M12 3.5v17M6.5 9h11"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+</defs></svg>
+
+<div class="app">
+
+  <!-- ============ INICIO ============ -->
+  <section class="screen" id="s-inicio">
+    <header class="head">
+      <div class="row">
+        <div><div class="sub" data-hoy></div><h2 data-t="appNombre"></h2></div>
+        <img class="crest" src="img/stm-crest.png" alt="St. Mary School">
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="eyebrow" data-t="hoy"></span><b data-hoy-estado></b></div>
+        <div class="stat"><span class="eyebrow" data-t="sinLeer"></span><b data-sin-leer></b></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="section-title" data-enlaces-title><h3 data-t="accesos"></h3><small data-t="accesosSub"></small></div>
+      <div class="links" data-enlaces></div>
+
+      <div data-promo></div>
+
+      <div class="section-title"><h3 data-t="destacado"></h3></div>
+      <div data-destacado></div>
+
+      <div class="section-title"><h3 data-t="tablero"></h3><button class="link" data-marcar-leidos data-t="marcarLeidos"></button></div>
+      <div class="chips dark" data-cats></div>
+      <div class="week" data-aviso-list></div>
+
+      <div class="section-title"><h3 data-t="estaSemana"></h3><button class="link" data-go="calendario" data-t="verCalendario"></button></div>
+      <div class="card list" data-proximos></div>
+    </div>
+  </section>
+
+  <!-- ============ DETALLE DE AVISO ============ -->
+  <section class="screen" id="s-aviso">
+    <header class="head">
+      <div class="row start">
+        <button class="back" data-go="inicio" aria-label="Volver"><svg class="ic"><use href="#i-chev-l"/></svg></button>
+        <div><div class="sub eyebrow" style="color:#fff;opacity:.85" data-circ-eyebrow></div><h2 style="font-size:22px;line-height:1.16" data-circ-title></h2></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="card circ-body" data-circ-body></div>
+      <div class="card list pasos" data-circ-pasos hidden></div>
+      <div class="card adjunto" data-circ-contacto hidden>
+        <svg class="ic" style="color:var(--verde-oscuro)"><use href="#i-people"/></svg>
+        <div><b data-circ-contacto-nombre></b><small data-circ-contacto-detalle></small></div>
+        <span class="ways" data-circ-contacto-ways></span>
+      </div>
+      <a class="card adjunto" data-circ-file hidden target="_blank" rel="noopener">
+        <svg class="ic"><use href="#i-doc"/></svg>
+        <div><b data-circ-file-name></b><small>PDF</small></div>
+        <span class="act" data-t="descargar"></span>
+      </a>
+      <div class="two">
+        <button class="btn ghost" data-go="contactos" data-t="preguntar"></button>
+        <button class="btn primary" data-go="inicio" data-t="entendido"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALENDARIO ============ -->
+  <section class="screen" id="s-calendario">
+    <header class="head">
+      <div class="row">
+        <div><div class="sub" data-t="calSub"></div><h2 data-t="calTitle"></h2></div>
+        <img class="crest" src="img/stm-crest.png" alt="">
+      </div>
+      <div class="chips" data-levels>
+        <button class="chip" data-level="todos" aria-pressed="true" data-t="todoColegio"></button>
+        <button class="chip" data-level="preescolar" aria-pressed="false" data-t="preescolar"></button>
+        <button class="chip" data-level="primaria" aria-pressed="false" data-t="primaria"></button>
+        <button class="chip" data-level="secundaria" aria-pressed="false" data-t="secundaria"></button>
+      </div>
+    </header>
+    <div class="content">
+      <div class="month-nav">
+        <button data-month="-1" aria-label="Mes anterior"><svg class="ic"><use href="#i-chev-l"/></svg></button>
+        <div style="text-align:center"><h3 data-month-title></h3><small class="valor" data-valor hidden></small></div>
+        <button data-month="1" aria-label="Mes siguiente"><svg class="ic"><use href="#i-chev-r"/></svg></button>
+      </div>
+      <div class="card"><div class="cal" data-cal></div><div class="cal-toggle"><button data-cal-toggle></button></div></div>
+      <div class="legend-row" data-legend></div>
+      <div class="section-title"><h3 data-ev-title></h3><button class="link" data-ev-clear hidden data-t="verTodo"></button></div>
+      <div class="week" data-events></div>
+    </div>
+  </section>
+
+  <!-- ============ EXTRACURRICULARES ============ -->
+  <section class="screen" id="s-extras">
+    <header class="head morado">
+      <div class="row">
+        <div><div class="sub" data-t="extSub"></div><h2 data-t="extTitle"></h2></div>
+        <img class="crest" src="img/stm-crest.png" alt="">
+      </div>
+      <div class="chips" data-xtipos></div>
+    </header>
+    <div class="content">
+      <div class="section-title"><h3 data-t="extPasos"></h3></div>
+      <div class="card list pasos" data-pasos></div>
+      <div class="card adjunto" data-pago>
+        <svg class="ic" style="color:var(--verde-oscuro)"><use href="#i-card"/></svg>
+        <div><b data-pago-lugar></b><small data-pago-detalle></small></div>
+        <span class="ways" data-pago-ways></span>
+      </div>
+      <div class="section-title"><h3 data-t="extActividades"></h3><small data-ext-count></small></div>
+      <div class="week" data-extras></div>
+    </div>
+  </section>
+
+  <!-- ============ PAGOS · SERVICIOS EDUCATIVOS ============ -->
+  <section class="screen" id="s-pagos">
+    <header class="head">
+      <div class="row">
+        <div><div class="sub" data-pagos-sub></div><h2 data-pagos-titulo></h2></div>
+        <img class="crest" src="img/stm-crest.png" alt="">
+      </div>
+    </header>
+    <div class="content">
+      <p class="intro" data-pagos-intro></p>
+      <div class="section-title"><h3 data-t="cuentas"></h3><small data-t="tocaCopiar"></small></div>
+      <div class="card list" data-cuentas></div>
+      <p class="nota-cuentas" data-pagos-nota></p>
+      <div class="card comprobante">
+        <h3 data-t="comprobanteT"></h3>
+        <p data-pagos-comprobante></p>
+        <a class="btn wa" data-pagos-wa target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg><span data-t="enviarWa"></span></a>
+        <div class="two">
+          <a class="btn ghost" data-pagos-mail><svg class="ic"><use href="#i-mail"/></svg><span data-t="correo"></span></a>
+          <a class="btn ghost" data-pagos-tel><svg class="ic"><use href="#i-phone"/></svg><span data-t="llamar"></span></a>
+        </div>
+        <small class="horario" data-pagos-horario></small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTOS ============ -->
+  <section class="screen" id="s-contactos">
+    <header class="head">
+      <div class="row">
+        <div><div class="sub">St. Mary School</div><h2 data-t="contTitle"></h2></div>
+        <img class="crest" src="img/stm-crest.png" alt="">
+      </div>
+      <div class="head-info">
+        <div class="addr"><svg class="ic"><use href="#i-pin"/></svg><p><b data-dir1></b><br><span data-dir2></span></p></div>
+        <div class="addr"><svg class="ic"><use href="#i-clock"/></svg><p><b data-t="atencion"></b><br><span data-horas></span></p></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="week" data-grupos></div>
+
+      <div class="card help">
+        <h3 data-t="ayudaT"></h3>
+        <p data-t="ayudaP"></p>
+        <a class="btn wa" data-wa target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg><span data-t="waColegio"></span></a>
+      </div>
+
+      <div class="section-title"><h3 data-t="ajustes"></h3></div>
+      <div class="card list">
+        <a class="mas-row" data-web target="_blank" rel="noopener"><svg class="ic"><use href="#i-globe"/></svg><span data-t="mWeb"></span><svg class="ic chev"><use href="#i-open"/></svg></a>
+        <div class="mas-row" style="cursor:default">
+          <svg class="ic"><use href="#i-globe"/></svg><span style="flex:1" data-t="idioma"></span>
+          <div class="seg" data-lang-seg>
+            <button data-lang="es" aria-pressed="true">ES</button>
+            <button data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+      <div class="card install" data-install>
+        <h4 data-t="instalarT"></h4>
+        <p data-t="instalarP"></p>
+        <ol data-install-steps></ol>
+        <button class="btn primary" data-install-btn hidden><svg class="ic"><use href="#i-download"/></svg><span data-t="instalarBtn"></span></button>
+      </div>
+      <div class="foot" data-version></div>
+    </div>
+  </section>
+
+  <nav class="tabbar" aria-label="Secciones">
+    <button data-tab="inicio"><svg class="ic"><use href="#i-home"/></svg><span data-t="inicio"></span><span class="tab-dot" data-unread-dot hidden></span></button>
+    <button data-tab="calendario"><svg class="ic"><use href="#i-cal"/></svg><span data-t="calendario"></span></button>
+    <button data-tab="extras"><svg class="ic"><use href="#i-star"/></svg><span data-t="extras"></span></button>
+    <button data-tab="pagos"><svg class="ic"><use href="#i-card"/></svg><span data-t="pagos"></span></button>
+    <button data-tab="contactos"><svg class="ic"><use href="#i-people"/></svg><span data-t="contactos"></span></button>
+  </nav>
+</div>
+
+<script src="datos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Familias STM · configuración de la carpeta (Apache / LiteSpeed en cPanel)
+# Sirve la app de forma independiente del WordPress que está en la raíz del sitio.
+
+# Esta carpeta se atiende directo, sin pasar por WordPress
+RewriteEngine On
+RewriteBase /familias/
+RewriteRule ^ - [L]
+
+DirectoryIndex index.html
+
+# Tipos de archivo necesarios para que la app se pueda instalar
+AddType application/manifest+json .webmanifest
+AddType application/javascript .js
+AddCharset UTF-8 .html .js .css .webmanifest
+
+# El service worker y los datos nunca deben quedar guardados en caché del servidor o de Cloudflare
+<FilesMatch "^(sw\.js|datos\.js|index\.html|manifest\.webmanifest)$">
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+</FilesMatch>
+
+# Imágenes e íconos sí pueden guardarse
+<FilesMatch "\.(png|jpg|jpeg|svg|ico)$">
+  Header set Cache-Control "public, max-age=604800"
+</FilesMatch>
